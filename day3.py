@@ -84,7 +84,6 @@ def task2():
 					if i < len(lines)-1 and lines[i+1][k] == "*":
 						gears[(i+1, k)].append(num)
 			j += 1
-	print(gears)
 	for gear in gears.keys():
 		if len(gears[gear]) == 2:
 			out += gears[gear][0]*gears[gear][1]
